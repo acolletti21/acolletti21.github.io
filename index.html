@@ -23,7 +23,8 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
 </head>
 
 <body>
@@ -45,10 +46,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">About</a>
+                        <a href="#about">About</a>
                     </li>
                     <li>
-                        <a href="#">Projects</a>
+                        <a href="#projects">Projects</a>
                     </li>
                     <li>
                         <a href="#">Contact</a>
@@ -67,8 +68,9 @@
     </header>
 
     <!-- Content Section -->
-    <section>
-        <div class="container">
+
+    <section id="about">
+        <div class="container" >
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="section-heading">About</h1>
@@ -83,9 +85,10 @@
     <!-- Image backgrounds are set within the full-width-pics.css file. -->
     <aside class="image-bg-fixed-height"></aside>
 
+
     <!-- Content Section -->
     <section>
-        <div class="container">
+        <div class="container" id="projects">
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="section-heading">Projects</h1>
@@ -97,6 +100,7 @@
         </div>
         <!-- /.container -->
     </section>
+
 
     <!-- Footer -->
     <footer>
@@ -111,12 +115,80 @@
         <!-- /.container -->
     </footer>
 
+ 
+
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+
+
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
+
+    <script>
+            $(function () {
+            Highcharts.chart('container', {
+                chart: {
+                    type: 'areaspline'
+                },
+                title: {
+                    text: 'Average fruit consumption during one week'
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'left',
+                    verticalAlign: 'top',
+                    x: 150,
+                    y: 100,
+                    floating: true,
+                    borderWidth: 1,
+                    backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'
+                },
+                xAxis: {
+                    categories: [
+                        'Monday',
+                        'Tuesday',
+                        'Wednesday',
+                        'Thursday',
+                        'Friday',
+                        'Saturday',
+                        'Sunday'
+                    ],
+                    plotBands: [{ // visualize the weekend
+                        from: 4.5,
+                        to: 6.5,
+                        color: 'rgba(68, 170, 213, .2)'
+                    }]
+                },
+                yAxis: {
+                    title: {
+                        text: 'Fruit units'
+                    }
+                },
+                tooltip: {
+                    shared: true,
+                    valueSuffix: ' units'
+                },
+                credits: {
+                    enabled: false
+                },
+                plotOptions: {
+                    areaspline: {
+                        fillOpacity: 0.5
+                    }
+                },
+                series: [{
+                    name: 'John',
+                    data: [3, 4, 3, 5, 4, 10, 12]
+                }, {
+                    name: 'Jane',
+                    data: [1, 3, 4, 3, 3, 5, 4]
+                }]
+            });
+            });
+    </script>
+    
 </body>
 
 </html>
