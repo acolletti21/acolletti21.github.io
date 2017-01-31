@@ -12,6 +12,7 @@ body {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    color: rgba(52,27,125,100);
 }
 
 .image-bg-fluid-height,
@@ -52,7 +53,7 @@ section {
 }
 
 .name{
-    font-size:60px;
+    font-size:80px;
     font-weight: bold;
     color: rgba(52,27,125,100);
 }
