@@ -6,7 +6,7 @@
 
 body {
     margin-top: 50px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    background-image: url('http://imgur.com/a/FVxar') no-repeat center center scroll;
+    background: url('background-175556_1280.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -20,12 +20,11 @@ body {
 }
 
 .image-bg-fluid-height {
-	background: url('http://imgur.com/a/FVxar') no-repeat center center scroll;
     padding: 100px 0;
 }
 
 .image-bg-fixed-height {
-	background: url('http://imgur.com/a/FVxar') no-repeat center center scroll;
+	background: url('http://lorempixel.com/g/1920/500/') no-repeat center center scroll;
     height: 450px;
 }
 
@@ -35,6 +34,7 @@ body {
 
 section {
     padding: 75px 0;
+    background: rgba(255,200,160,0.85);
 }
 
 .section-heading {
