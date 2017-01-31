@@ -26,12 +26,12 @@ body {
 }
 
 .image-bg-fixed-height {
-    background: url('http://imgur.com/a/FVxar') no-repeat center center scroll;
-    height: 450px;
+    height: 100px;
 }
 
 .img-center {
     margin: 0 auto;
+    height: 250px;
 }
 
 section {
