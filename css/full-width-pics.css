@@ -31,7 +31,7 @@ body {
 
 .img-center {
     margin: 0 auto;
-    height: 160px;
+    height: 180px;
 }
 
 section {
@@ -48,14 +48,13 @@ section {
     width: 90%;
     text-align: center;
     display: inline-block;
-    font-size: 12;
     height: auto;
 }
 
 .name{
   font-size:60px;
   font-weight: bold;
-  color: #4D3D9F;
+  color: ##341B7D;
 }
 
 .section-heading {
