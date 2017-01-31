@@ -31,12 +31,31 @@ body {
 
 .img-center {
     margin: 0 auto;
-    height: 120px;
+    height: 160px;
 }
 
 section {
   padding: 75px 0;
   background: rgba(255,200,160,0.85);
+}
+
+.wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+.side-by-side {
+    width: 90%;
+    text-align: center;
+    display: inline-block;
+    font-size: 12;
+    height: auto;
+}
+
+.name{
+  font-size:60px;
+  font-weight: bold;
+  color: #4D3D9F;
 }
 
 .section-heading {
