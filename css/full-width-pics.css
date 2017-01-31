@@ -21,7 +21,7 @@ body {
 }
 
 .image-bg-fluid-height {
-    background: url('') no-repeat center center scroll;
+   background: url('') no-repeat center center scroll;
    padding: 100px 0;
 }
 
@@ -35,8 +35,8 @@ body {
 }
 
 section {
-  padding: 75px 0;
-  background: rgba(255,200,160,0.85);
+    padding: 75px 0;
+    background: rgba(255,200,160,0.85);
 }
 
 .wrapper {
@@ -52,9 +52,9 @@ section {
 }
 
 .name{
-  font-size:60px;
-  font-weight: bold;
-  color: ##341B7D;
+    font-size:60px;
+    font-weight: bold;
+    color: rgba(52,27,125,100);
 }
 
 .section-heading {
