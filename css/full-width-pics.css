@@ -53,9 +53,11 @@ section {
 }
 
 .name{
-    font-size:80px;
+    font-size: 90px;
+    font-family: impact;
     font-weight: bold;
-    color: rgba(52,27,125,100);
+    color: #1F0866;
+    text-shadow: 1px 1px #3E0FD8;
 }
 
 .section-heading {
