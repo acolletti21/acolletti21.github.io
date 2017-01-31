@@ -21,17 +21,17 @@ body {
 }
 
 .image-bg-fluid-height {
-    background: url('http://imgur.com/a/FVxar') no-repeat center center scroll;
+    background: url('') no-repeat center center scroll;
    padding: 100px 0;
 }
 
 .image-bg-fixed-height {
-    height: 100px;
+    height: 80px;
 }
 
 .img-center {
     margin: 0 auto;
-    height: 250px;
+    height: 120px;
 }
 
 section {
