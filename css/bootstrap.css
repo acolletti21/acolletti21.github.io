@@ -4036,7 +4036,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a:focus {
   color: #555;
   cursor: default;
-  background-color: #fff;
+  background-color: #686ce1;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
 }
@@ -4492,6 +4492,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     margin-right: 0;
   }
 }
+
+
+
+
 .navbar-default {
   background-color: #f8f8f8;
   border-color: #e7e7e7;
@@ -4566,8 +4570,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
     color: #ccc;
-    background-color: transparent;
+    background-color: #686ce1;
   }
+
+
+
+
 }
 .navbar-default .navbar-link {
   color: #777;
