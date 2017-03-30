@@ -7,20 +7,20 @@
 
 body {
     margin-top: 50px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    background: url('../images/ink.jpg') no-repeat center center fixed;
+    background: url('../images/ink3.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    color: rgba(52,27,125,100);
+    color: #343435;
 }
 
 .name{
     font-size: 90px;
     font-family: impact;
     font-weight: bold;
-    color: #1F0866;
-    text-shadow: 1px 1px #3E0FD8;
+    color: #2e2d30;
+    text-shadow: 1px 1px 2px 5px #3E0FD8;
 }
 
 .image-bg-fluid-height,
@@ -35,17 +35,43 @@ body {
 }
 
 .image-bg-fixed-height {
-    height: 80px;
+    height: 90px;
 }
 
 .img-center {
     margin: 0 auto;
     height: 180px;
 }
+.column-flow {
+    -moz-column-count: 3;
+    -moz-column-gap: 10px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 10px;
+    column-count: 3;
+    /*column-gap: 10px;*/
+    padding-left: 10%;
+    overflow: auto;
+  }
+
+.column-flow  p {
+    width: 200px;
+}
+
+.circle-shadow { 
+  width:320px;
+  height:314px; 
+  /*border: solid 1px #ccc; */
+  background-color: #fff; 
+  box-shadow: 2px 4px 6px 0px #a88888; 
+  -moz-box-shadow: 2px 4px 6px 0px #a88888; 
+  -webkit-box-shadow: 2px 4px 6px 0px #a88888; 
+  -o-box-shadow: 0px 10px #a88888; 
+  border-radius: 300px; 
+}
 
 section {
-    padding: 75px 0;
-    background: rgba(255,200,160,0.85);
+    padding: 75px 5%;
+    background: rgba(171,166,181,0.85);
 }
 
 .wrapper {
@@ -89,11 +115,11 @@ footer {
 }
 
 .navbar-custom {
-  background-color: #4d4487;
-  border-color: #686ce1;
+  background-color: #343435;
+  border-color: #000;
 }
 .navbar-custom .navbar-brand {
-  color: #f9cb71;
+  color: #fffcc7;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus {
@@ -102,8 +128,13 @@ footer {
 .navbar-custom .navbar-text {
   color: #f9cb71;
 }
+
+.navbar-custom .navbar-nav > li > a:hover {
+  background-color: #363042;
+}
+
 .navbar-custom .navbar-nav > li > a {
-  color: #f9cb71;
+  color: #f9f9e3;
 }
 .navbar-custom .navbar-nav > li > a:hover,
 .navbar-custom .navbar-nav > li > a:focus {
@@ -118,7 +149,7 @@ footer {
 .navbar-custom .navbar-nav > li > .dropdown-menu > li > a:hover,
 .navbar-custom .navbar-nav > li > .dropdown-menu > li > a:focus {
   color: #ffbbbc;
-  background-color: #686ce1;
+  background-color: #686ce1 !important;
 }
 .navbar-custom .navbar-nav > li > .dropdown-menu > li > .divider {
   background-color: #686ce1;
