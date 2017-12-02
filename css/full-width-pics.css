@@ -15,9 +15,15 @@ body {
     color: #343435;
 }
 
+.fixed-ratio-img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* IE8 */
+}
+
 .name{
     font-size: 90px;
-    font-family: impact;
+    font-family: "impact", sans-serif;
     font-weight: bold;
     color: #2e2d30;
     text-shadow: 1px 1px 2px 5px #3E0FD8;
@@ -49,7 +55,7 @@ body {
     -webkit-column-gap: 10px;
     column-count: 3;
     /*column-gap: 10px;*/
-    padding-left: 10%;
+    padding-left: 5%;
     overflow: auto;
   }
 
@@ -71,7 +77,7 @@ body {
 
 section {
     padding: 75px 5%;
-    background: rgba(171,166,181,0.85);
+    background: rgba(171,166,181,0.93);
 }
 
 .wrapper {
